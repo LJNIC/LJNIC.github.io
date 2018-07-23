@@ -2,6 +2,7 @@ body {
 	margin: 2%;
 	padding: 2%;
 	background: #15181c;
+	font-family: 'Oxygen', sans-serif;
 }
 
 #content {
@@ -10,15 +11,20 @@ body {
 	flex-wrap: wrap;
 }
 
-#content > div {
-	width: 45%;
-	max-width: 45%;
+#content > div:not(#title-card) {
 	text-align: center;
 	color: lightgray;
 	margin-bottom: 2em;
 	background: #21252b;
 	border: solid #15181c;
 	border-radius: 5px;
+	box-shadow: 4px 4px 2px black;
+}	
+
+#content > div {
+	width: 45%;
+	max-width: 45%;
+	text-align: center;
 	display: table;
 	padding: 1%;
 }
@@ -29,16 +35,19 @@ span {
 }
 
 #content #title-card {
-	font-size: 200%;
+	font-size: 275%;
 	border-bottom: solid lightgray;
 	border-right: solid lightgray;
-	max-width: 45%;
 	text-align: right;
 	margin-bottom: 5%;
-	padding-bottom: 3%;
-	padding-right: 3%;
 	color: #217c59;
 	background: #15181c;
+	font-family: 'Inconsolata', monospace;
+}
+
+#title {
+	padding-right: 5%;
+	padding-bottom: 3%;
 }
 
 p {
