@@ -1,0 +1,47 @@
+body {
+	margin: 2%;
+	padding: 2%;
+	background: #15181c;
+}
+
+#content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#content > div {
+	width: 45%;
+	max-width: 45%;
+	text-align: center;
+	color: lightgray;
+	margin-bottom: 2em;
+	background: #21252b;
+	border: solid #15181c;
+	border-radius: 5px;
+	display: table;
+	padding: 1%;
+}
+
+span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#content #title-card {
+	font-size: 200%;
+	border-bottom: solid lightgray;
+	border-right: solid lightgray;
+	max-width: 45%;
+	text-align: right;
+	margin-bottom: 5%;
+	padding-bottom: 3%;
+	padding-right: 3%;
+	color: #217c59;
+	background: #15181c;
+}
+
+p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
