@@ -1,7 +1,8 @@
 <template>
 	<div class="card">
-        <br>
-		<p> {{ name }} </p>
+        <a :href="url">
+            <img :src="'/static/' + image"/>
+        </a>
         <br>
 		<p> {{ description }} </p>
         <br>
@@ -12,7 +13,10 @@
 export default {
     props: {
         name: String,
-        description: String
+        description: String,
+        image: String,
+        color: String,
+        url: String
     },
     data () {
         return {
@@ -28,6 +32,10 @@ export default {
 	background: #21252b;
 	border-radius: 5px;
     box-shadow: 4px 4px 4px black;
-    font-size: 150%;
+    font-size: 115%;
+}
+
+img {
+    max-width: 100%;
 }
 </style>

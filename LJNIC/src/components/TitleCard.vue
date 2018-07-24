@@ -1,7 +1,9 @@
 <template>
 	<div id="title-card">
+    <span class="center">
 		<p> Liam's </p>
 		<p> Projects </p>
+    </span>
 	</div>
 </template>
 
@@ -25,7 +27,15 @@ export default {
 	color: #217c59;
 	background: #15181c;
 	font-family: 'Inconsolata', monospace;
-	width: 100%;
-	box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+  display: table;
 } 
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
 </style>

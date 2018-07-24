@@ -2,16 +2,25 @@
   <div id="app">
 	  <TitleCard/>
     <Card 
+      color="#ff9400"
+      url="https://github.com/Atherys-Horizons"
+      image="atherys.jpg"
       name="A'therys Horizons" 
       description="I'm part of the development team for an upcoming Minecraft RPG server. We use Java and an API called Sponge."
     ></Card>
     <Card 
+      color="#dca456"
+      url="https://github.com/LJNIC/Talro"
+      image="menu.png"
       name="Talro"
       description="A pyramid exploration roguelike game written with Lua and the LOVE game framework."
     ></Card>
     <Card 
-      name="A Roguelike in LOVE"
-      description="A tutorial for writing a roguelike with LOVE. Hand written CSS and HTML, save for syntax highlighting."
+      color="#f490e4"
+      url="https://ljnic.github.io/rogueinlove"
+      image="love.png"
+      name="A Roguelike in LÖVE"
+      description="A tutorial for writing a roguelike with LÖVE. Hand written CSS and HTML, save for syntax highlighting."
     ></Card>
   </div>
 </template>
