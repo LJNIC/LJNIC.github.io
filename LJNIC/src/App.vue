@@ -1,46 +1,50 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+	  <TitleCard/>
+    <Card 
+      name="A'therys Horizons" 
+      description="I'm part of the development team for an upcoming Minecraft RPG server. We use Java and an API called Sponge."
+    ></Card>
+    <Card 
+      name="Talro"
+      description="A pyramid exploration roguelike game written with Lua and the LOVE game framework."
+    ></Card>
+    <Card 
+      name="A Roguelike in LOVE"
+      description="A tutorial for writing a roguelike with LOVE. Hand written CSS and HTML, save for syntax highlighting."
+    ></Card>
   </div>
 </template>
 
 <script>
+import TitleCard from './components/TitleCard.vue'
+import Card from './components/Card.vue'
+
 export default {
   name: 'app',
+	components: {
+		TitleCard,
+    Card
+	},
   data () {
     return {
-      msg: 'Liam''s Projects'
     }
   }
 }
 </script>
-
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    justify-self: center;
+    grid-template-columns: 50% 50%;
+  }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+  @media screen and (max-width: 600px) {
+	  #app {
+      grid-template-columns: 100%;
+    }
 }
 </style>
