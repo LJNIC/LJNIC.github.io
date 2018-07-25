@@ -60,7 +60,7 @@ export default {
     color: $accent;
 }
 #github-image {
-    margin-top: 50px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     transform: scale(0.5);

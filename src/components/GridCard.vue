@@ -4,7 +4,6 @@
             <img :src="'/static/' + image"/>
         </a>
         <br>
-		<p> {{ description }} </p>
         <slot name="description"></slot>
         <br>
 	</div>
@@ -13,10 +12,6 @@
 <script>
 export default {
     props: {
-        description: {
-            type: String,
-            required: true
-        },
         image: {
             type: String,
             required: true

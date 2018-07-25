@@ -5,25 +5,34 @@
     <GridCard 
       url="https://github.com/Atherys-Horizons"
       image="atherys.jpg"
-      :description="`I'm part of the development team for an upcoming Minecraft RPG server. 
-                     We use Java and an API called Sponge to develop plugins that interact 
-                     with the game world.`"
-    ></GridCard>
+    >
+	<div slot="description">
+		<p> I'm part of the development team for an upcoming Minecraft RPG server. 
+            We use Java and an API called Sponge to develop plugins that interact 
+            with the game world.
+		</p>
+	</div>
+	</GridCard>
     <GridCard 
       url="https://github.com/LJNIC/Talro"
       image="menu.png"
     >
-    <vue-markdown name="description"> A pyramid exploration roguelike game written with Lua and the LOVE game framework. It uses the fantastic [rotLove](https://github.com/paulofmandown/rotLove) library that I've modified with additional features.
-    </vue-markdown>
+    <div slot="description"> 
+		<p> A pyramid exploration roguelike game written with Lua and the LOVE game framework. 
+			It uses the fantastic <a href="https://github.com/paulofmandown/rotLove">rotLove</a> 
+			library that I've modified with additional features.
+		</p>
+    </div>
     </GridCard>
     <GridCard 
-      color="#f490e4"
       url="https://ljnic.github.io/rogueinlove"
       image="love.png"
-      name="A Roguelike in LÖVE"
     >
-    <vue-markdown name="description"> A tutorial for writing a roguelike with LOVE. The website is written in CSS     and HTML, save for the syntax highlighting, which is handled by [Hightlight.js](https://highlightjs.org/)
-    </vue-markdown>
+    <div slot="description"> 
+		<p> A tutorial for writing a roguelike with LOVE. The website is written in CSS and HTML, 
+			save for the syntax highlighting, which is handled by <a href="https://highlightjs.org/">Highlight.js</a>.
+		</p>
+    </div>
     </GridCard>
     </div>
     <GitHub/>
@@ -78,7 +87,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  #app {
+  #grid {
     grid-template-columns: 100%;
   }
 }
