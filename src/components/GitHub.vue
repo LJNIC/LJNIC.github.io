@@ -8,7 +8,7 @@
         xmlns:svg="http://www.w3.org/2000/svg" 
         preserveAspectRatio="xMidYMid"
     >
-    <a href="https:github.com/LJNIC">
+    <a href="https://github.com/LJNIC">
     <g class="layer">
     <rect 
         fill="none" 

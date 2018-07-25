@@ -43,15 +43,13 @@
 import TheTitleCard from './components/TheTitleCard.vue'
 import GridCard from './components/GridCard.vue'
 import GitHub from './components/GitHub.vue'
-import VueMarkdown from 'vue-markdown'
 
 export default {
   name: 'app',
 	components: {
 		TheTitleCard,
     GridCard,
-    GitHub,
-    VueMarkdown
+    GitHub
 	},
   data () {
     return {
