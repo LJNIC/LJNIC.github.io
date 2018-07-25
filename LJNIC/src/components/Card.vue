@@ -36,6 +36,13 @@ export default {
 }
 
 img {
-    max-width: 100%;
+	width: 100%;
+	transition: all 0.3s;
+	transform-origin: 50% 50%;
+	max-width: 100%;
+}
+
+img:hover{
+	transform: scale(1.1);
 }
 </style>
