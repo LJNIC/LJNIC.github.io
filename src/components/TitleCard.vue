@@ -27,9 +27,10 @@ export default {
 	color: #217c59;
 	background: #15181c;
 	font-family: 'Inconsolata', monospace;
-  width: 100%;
-  box-sizing: border-box;
-  display: table;
+  	width: 100%;
+	height: 100%;
+  	box-sizing: border-box;
+  	display: table;
 } 
 
 .center {
