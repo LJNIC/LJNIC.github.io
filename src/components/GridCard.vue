@@ -5,6 +5,7 @@
         </a>
         <br>
 		<p> {{ description }} </p>
+        <slot name="description"></slot>
         <br>
 	</div>
 </template>
@@ -12,11 +13,18 @@
 <script>
 export default {
     props: {
-        name: String,
-        description: String,
-        image: String,
-        color: String,
-        url: String
+        description: {
+            type: String,
+            required: true
+        },
+        image: {
+            type: String,
+            required: true
+        },
+        url: {
+            type: String,
+            required: true
+        } 
     },
     data () {
         return {
@@ -25,14 +33,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../variables.scss';
 .card {
     text-align: center;
-	color: lightgray;
-	background: #21252b;
+	color: $accent;
+	background: $card-background;
 	border-radius: 5px;
-    box-shadow: 4px 4px 4px black;
-    font-size: 115%;
+    box-shadow: 4px 4px 4px $shadow;
+    font-size: $card-size; 
 }
 
 img {
@@ -43,6 +52,6 @@ img {
 }
 
 img:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 </style>

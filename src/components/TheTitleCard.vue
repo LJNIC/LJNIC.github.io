@@ -16,22 +16,28 @@ export default {
 }
 </script>
 
-<style>
- #title-card {
-	font-size: 500%;
-	border-bottom: solid lightgray;
-	border-right: solid lightgray;
+<style lang="scss" scoped>
+@import '../variables.scss';
+#title-card {
+	font-size: $title-size;
+	border-bottom: solid $accent;
+	border-right: solid $accent;
 	padding-right: 4%;
 	padding-bottom: 2%;
 	text-align: right;
-	color: #217c59;
-	background: #15181c;
+	color: $title;
+	background: $background;
 	font-family: 'Inconsolata', monospace;
-  	width: 100%;
+  width: 100%;
 	height: 100%;
-  	box-sizing: border-box;
-  	display: table;
+  box-sizing: border-box;
+  display: table;
 } 
+
+#github {
+	max-width: 200px;
+	float: left;
+}
 
 .center {
   display: table-cell;
